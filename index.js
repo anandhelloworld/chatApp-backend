@@ -17,7 +17,7 @@ const MONGO_URL = process.env.MONGO_URL||"mongodb+srv://anand:TmF7ogJ1ALhcWFxO@a
 
 const server = http.createServer(app);
 const io = new Server(server, {
-  cors: { origin: "http://localhost:3000", methods: ["GET", "POST"] },
+  cors: { origin: "https://chat-cok4.onrender.com", methods: ["GET", "POST"] },
 });
 
 app.use(cors());
